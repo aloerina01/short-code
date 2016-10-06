@@ -1,5 +1,7 @@
 # short-code
 
+[![Build Status](https://travis-ci.org/aloerina01/short-code.svg?branch=travis-ci-test)](https://travis-ci.org/aloerina01/short-code)
+
 ### What's this
 <a href="https://twitter.com/aloerina_" target="_blank">@aloerina_</a>が作るサンプルコードや小さなアプリケーションです。ブランチごとに別々のプロジェクトとなっています。
 
