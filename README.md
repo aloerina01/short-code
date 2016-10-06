@@ -1,7 +1,7 @@
 # short-code
 
 ### What's this
-<a href="" target="_blank">@aloerina_</a>が作るサンプルコードや小さなアプリケーションです。ブランチごとに別々のプロジェクトとなっています。
+<a href="https://twitter.com/aloerina_" target="_blank">@aloerina_</a>が作るサンプルコードや小さなアプリケーションです。ブランチごとに別々のプロジェクトとなっています。
 
 ### How to use
 
