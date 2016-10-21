@@ -18,7 +18,7 @@ gulp.task('build', function() {
     .pipe(plumber({
       errorHandler: notify.onError("Error: <%= error.message %>")
     }))
-    .pipe(eslint({useEslintrc: false}))
+    .pipe(eslint({useEslintrc: true}))
     .pipe(eslint.format())
     .pipe(eslint.failOnError())
     .pipe(webpack(webpackConfig))
