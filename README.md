@@ -21,6 +21,8 @@ npm install
 npm run build
 ```
 
+`npm start`はこれのエイリアスです。
+
 基本的なコマンドは`package.json`に定義しています。コマンド一覧を表示する場合は下記コマンドを叩いてください。
 
 ```
