@@ -21,6 +21,7 @@
     "webpack": "^1.13.2"
   },
   "scripts": {
+    "start": "npm install && npm run build",
     "build": "gulp",
     "production": "gulp production",
     "sass": "gulp sass",
