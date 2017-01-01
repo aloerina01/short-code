@@ -25,6 +25,14 @@
     "build": "gulp",
     "production": "gulp production",
     "sass": "gulp sass",
-    "minify": "gulp minify"
+    "minify": "gulp minify",
+    "express": "node app",
+    "express-w": "nodemon app"
+  },
+  "dependencies": {
+    "ejs": "^2.5.5",
+    "express": "^4.14.0",
+    "nodemon": "^1.11.0",
+    "superagent": "^3.3.1"
   }
 }

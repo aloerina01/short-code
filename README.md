@@ -1,30 +1,23 @@
-# short-code
+# short-code - Sample Express
 
 ### What's this
-<a href="https://twitter.com/aloerina_" target="_blank">@aloerina_</a>が作るサンプルコードや小さなアプリケーションです。ブランチごとに別々のプロジェクトとなっています。
+[Express](http://expressjs.com/)のGettingStartedをお試し。  
+qiitaの記事を適当に取得して表示させるところまで。
 
-### How to use
+### How to start
 
-任意のブランチのソースをcheckoutして好きに使ってください。
+1. git clone する
+2. `npm install`
+3. `npm run express`
+4. `http://localhost:3000/`にアクセスする
 
-#### install & checkout
 
-```
-git clone git@github.com:aloerina01/short-code.git
-git checkout XXX
-```
+### Notes
+ExpressのソースがES6に対応していないので、ES5の記述をしている(ビルドスクリプトは使わないし動かない)。
 
-#### preparation
+### Libraries
 
-```
-npm install
-npm run build
-```
-
-`npm start`はこれのエイリアスです。
-
-基本的なコマンドは`package.json`に定義しています。コマンド一覧を表示する場合は下記コマンドを叩いてください。
-
-```
-npm run
-```
+* Express
+* ejs
+* nodemon
+* superagent
