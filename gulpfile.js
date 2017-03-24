@@ -9,6 +9,8 @@ var notify = require('gulp-notify');
 var sass = require('gulp-sass');
 var webpackConfig = require('./webpack.config.js');
 
+console.log('\u001b[32m' + '✓ NODE_ENV = ' + process.env.NODE_ENV);
+
 gulp.task('clean', function() {
   return del.sync(['dist']);
 });
@@ -56,6 +58,8 @@ gulp.task('css-minify', function() {
 
 gulp.task('watch', function() {
   gulp.watch(['./js/*.js'], ['build']);
+  gulp.watch(['./js/*.vue'], ['build']);
+  gulp.watch(['./js/*.html'], ['build']);
   gulp.watch(['./sass/*.scss'], ['sass']);
 });
 
