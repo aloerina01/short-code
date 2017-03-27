@@ -1,3 +1,5 @@
+var DIPlugin = require('./plugins/DIPlugin');
+
 module.exports = {
   context: __dirname + '/js',
   entry: {
@@ -8,15 +10,15 @@ module.exports = {
     filename: './js/[name].js'
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.vue$/,
-        loader: 'vue'
+        use: 'vue-loader'
       },
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'babel-loader'
+        use: 'babel-loader'
         // query: {
         //   presets: ['es2015']
         // }
@@ -26,5 +28,8 @@ module.exports = {
   resolve: {
     extensions: [ "", ".vue", ".js" ]
   },
-  devtool: 'inline-source-map'
+  devtool: 'inline-source-map',
+  plugins: [
+    new DIPlugin()
+  ]
 };
