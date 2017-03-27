@@ -1,10 +1,10 @@
-import map from './map';
+const map = require('./map');
 
 /**
  * 
  * @param {Symbol} containerKey 
  * @param {Array.<Object>} dependencies 
  */
-export default function(containerKey, dependencies) {
+module.exports = function(containerKey, dependencies) {
     return map.put(containerKey, dependencies);
 }

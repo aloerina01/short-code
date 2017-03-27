@@ -10,7 +10,10 @@ class DependenciesMap {
     }
 }
 
-const proxy = new Proxy(new DependenciesMap(), {
+const map = new DependenciesMap();
+module.expotrs = map;
 
-});
-export default proxy;
+// const proxy = new Proxy(new DependenciesMap(), {
+
+// });
+// export default proxy;

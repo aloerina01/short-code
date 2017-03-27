@@ -1,9 +1,9 @@
-import map from './map';
+const map = require('./map');
 
 /**
  * 
  * @param {Symbol} containerKey 
  */
-export default function(containerKey) {
+module.exports = function(containerKey) {
     return map.get(containerKey);
 }
